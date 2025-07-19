@@ -6,3 +6,75 @@
     font-weight: 400;
     font-style: normal;
 }
+/* shared items */
+.shared{
+    display: flex;
+}
+.dark-gray{
+    color: #424242;
+}
+.light-gray{
+    color: #727272;
+}
+.primary-color{
+    background-color: rgba(255, 144, 14, 0.1);
+}
+.navbar, .banner{
+    max-width: 1600px;
+    margin: 0 auto ;
+}
+.banner{
+    font-weight: 700;
+    font-size: 3rem;
+}
+.btn-primary{
+    background-color: orange;
+    color: white;
+    padding: 20px 25px ;
+    font-size: 1.25rem;
+    font-weight: 600px;
+    border-radius: 8px;
+    border: none;
+    
+}
+
+/* only navbar */
+.nav-item{
+    list-style: none;
+    margin: 30px;
+    
+}
+.nav-link{
+    text-decoration: none;
+    font-weight: 500px;
+
+}
+.navbar{
+    justify-content: space-between;
+    align-items: center;
+}
+.banner-content{
+     max-width: 800px;
+     margin: 0 auto;
+     text-align: center;
+     margin-bottom: 50px;
+
+}
+.banner-title{
+    font-weight: 700;
+    font-size: 4rem;
+}
+.banner-description{
+    font-size: 1rem;
+    font-weight: 500;
+}
+.image{
+    width: 100%;
+    /* responsive korsi */
+}
+/* Responsive media query */
+@media screen  and (max-width: 576px)  {
+    .navbar , .nav-link{
+        flex-direction:column;
+    }
+}
